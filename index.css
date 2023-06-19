@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    box-shadow: 0 0 10px aqua;
+    padding: 40px;
+}
+.form-wrapper{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.group-input{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+.group-input input{
+    width: 320px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+.group-input label{
+    color: white;
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translatey(-50%);
+    pointer-events: none;
+    transition: 0.6s;
+
+}
+.group-input input:focus~label,
+.group-input input:valid~label{
+    top: -5px;
+}
+.remember{
+    color: white;
+}
+.remember input{
+    accent-color: aqua;
+}
+button{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    box-shadow: 0 0 10px aqua;
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 15px;
+    font-weight: 500;
+
+
+}
+button:hover{
+    box-shadow: 0 0 20px aqua;
+}
+.signup-link{
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+.signup-link p{
+    color: gray;
+}
+.signup-link a{
+    color: aqua;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing:1px ;
+
+}
+.signup-link a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+/* input[type=text] {
+    font-size: 10px;
+} */
+/* span{
+    color:rgb(255, 3, 3);
+    font-size: 9px;
+    box-shadow: 0 0 4px red;
+} */
